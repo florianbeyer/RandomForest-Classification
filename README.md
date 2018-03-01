@@ -10,6 +10,7 @@ This is the only section where you have to change something in the script (direc
 
 
 EXAMPLE (14 bands image and 11 classes):
+
 During the process you will get 2 images and the following information:
 
 About the training data:
