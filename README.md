@@ -17,19 +17,19 @@ In the end, a Tiff-File will be saved as your classification.
 During the process you will see 2 plots and a lot of information...
 
 ### ...about the training data:
-'''
+```
 We have 87895 training samples
 The training data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
 Our X matrix is sized: (87895L, 14L)
 Our y array is sized: (87895L,)
-'''
+```
 
 ### ...About the Random Forest Model Fit:
-'''
+```
 Our OOB prediction of accuracy is: 99.8634734627%
-'''
+```
 
-'''
+```
 Band 1 importance: 0.0261680458145
 Band 2 importance: 0.0153287127996
 Band 3 importance: 0.0205070224479
@@ -44,8 +44,9 @@ Band 11 importance: 0.0857394486887
 Band 12 importance: 0.0216590258319
 Band 13 importance: 0.0998573985857
 Band 14 importance: 0.033976627012
-'''
-'''
+```
+
+```
 	predict     1    2     3      4     5     6     7     8      9    10   11    All
 	truth                                                                           
 	1        5280    0     0      0     0     0     0     0      0     0    0   5280
@@ -60,16 +61,16 @@ Band 14 importance: 0.033976627012
 	10          0    0     0      0     0     0     0     0      0  6218    0   6218
 	11          0    0     0      0     0     0     0     0      0     0  375    375
 	All      5280  170  2962  16650  6194  1691  4509  2342  41504  6218  375  87895
-'''
+```
 
 ### ...about the independent validation:
 
-'''
+```
 We have 68482 validation pixels
 The validation data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
 Our X matrix is sized: (68482L,)
 Our y array is sized: (68482L,)
-'''
+```
 
 '''
 	col_0     1    2     3      4     5     6     7     8      9    10   11    All
