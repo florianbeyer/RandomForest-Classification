@@ -2,10 +2,13 @@
 
 ## Getting Started
 
-### You only have to prepare yor data:
-1. The multi-band Remote Sensing image as tif format.
-2. an image which defines your training dataset in the same extend as the remote sensing image
-3. an image which defines your validation dataset in the same extend as the remote sensing image
+I am using Anaconda (Python 2.7) and the GDAL package from OSGEO.
+
+### You only have to prepare yor data and you have to define how many tree you want to use:
+1. Choose the number of trees for the Random Forest (default = 500)
+2. The multi-band Remote Sensing image as tif format.
+3. An image which defines your training dataset in the same extend as the remote sensing image
+4. An image which defines your validation dataset in the same extend as the remote sensing image
 
 ### You find a section "INPUT INFORMATION".
 This is the only section where you have to change something in the script (directories and file names).
