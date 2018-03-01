@@ -268,8 +268,9 @@ print(convolution_mat)
 
 # information about precision, recall, f1_score, and support:
 # http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn.metrics.precision_recall_fscore_support
-target_names = range(1,len(labels.size))
-
+target_names = list()
+for name in range(1,(labels.size)+1):
+    target_names.append(str(name))
 sum_mat = classification_report(y_v,X_v,target_names=target_names)
 
 print sum_mat
