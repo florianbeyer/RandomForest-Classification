@@ -24,7 +24,7 @@ Our X matrix is sized: (87895L, 14L)
 Our y array is sized: (87895L,)
 ```
 
-### ...About the Random Forest Model Fit:
+### ...about the Random Forest Model Fit:
 ```
 Our OOB prediction of accuracy is: 99.8634734627%
 ```
@@ -72,7 +72,7 @@ Our X matrix is sized: (68482L,)
 Our y array is sized: (68482L,)
 ```
 
-'''
+```
 	col_0     1    2     3      4     5     6     7     8      9    10   11    All
 	row_0                                                                         
 	1      2597    0     0      0     0     0     0     0    701     0    0   3298
