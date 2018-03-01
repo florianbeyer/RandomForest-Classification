@@ -1,5 +1,7 @@
 # RandomForest-Classification
 
+## Getting Started
+
 ### You only have to prepare yor data:
 1. The multi-band Remote Sensing image as tif format.
 2. an image which defines your training dataset in the same extend as the remote sensing image
@@ -9,10 +11,12 @@
 This is the only section where you have to change something in the script (directories and file names).
 
 
-## EXAMPLE (14 bands image and 11 classes):
-During the process you will get 2 images and the following information:
+## EXAMPLE:
+This example uses a 14 bands remote sensing dataset and 11 classes as training and validation.
+In the end, a Tiff-File will be saved as your classification.
+During the process you will see 2 plots and a lot of information...
 
-### About the training data:
+### ...about the training data:
 '''
 We have 87895 training samples
 The training data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
@@ -20,37 +24,28 @@ Our X matrix is sized: (87895L, 14L)
 Our y array is sized: (87895L,)
 '''
 
-### About the Random Forest Model Fit:
-  Our OOB prediction of accuracy is: 99.8634734627%
+### ...About the Random Forest Model Fit:
+'''
+Our OOB prediction of accuracy is: 99.8634734627%
+'''
 
-  Band 1 importance: 0.0261680458145
-  
-  Band 2 importance: 0.0153287127996
-  
-  Band 3 importance: 0.0205070224479
-  
-  Band 4 importance: 0.037036238847
-  
-  Band 5 importance: 0.0310529483133
-  
-  Band 6 importance: 0.0436272835319
-  
-  Band 7 importance: 0.055942106673
-  
-  Band 8 importance: 0.398011332962
-  
-  Band 9 importance: 0.119100238254
-  
-  Band 10 importance: 0.0119935702383
-  
-  Band 11 importance: 0.0857394486887
-  
-  Band 12 importance: 0.0216590258319
-  
-  Band 13 importance: 0.0998573985857
-  
-  Band 14 importance: 0.033976627012
-
+'''
+Band 1 importance: 0.0261680458145
+Band 2 importance: 0.0153287127996
+Band 3 importance: 0.0205070224479
+Band 4 importance: 0.037036238847
+Band 5 importance: 0.0310529483133
+Band 6 importance: 0.0436272835319
+Band 7 importance: 0.055942106673
+Band 8 importance: 0.398011332962
+Band 9 importance: 0.119100238254
+Band 10 importance: 0.0119935702383
+Band 11 importance: 0.0857394486887
+Band 12 importance: 0.0216590258319
+Band 13 importance: 0.0998573985857
+Band 14 importance: 0.033976627012
+'''
+'''
 	predict     1    2     3      4     5     6     7     8      9    10   11    All
 	truth                                                                           
 	1        5280    0     0      0     0     0     0     0      0     0    0   5280
@@ -65,15 +60,18 @@ Our y array is sized: (87895L,)
 	10          0    0     0      0     0     0     0     0      0  6218    0   6218
 	11          0    0     0      0     0     0     0     0      0     0  375    375
 	All      5280  170  2962  16650  6194  1691  4509  2342  41504  6218  375  87895
+'''
 
+### ...about the independent validation:
 
-### About the independent validation:
+'''
+We have 68482 validation pixels
+The validation data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
+Our X matrix is sized: (68482L,)
+Our y array is sized: (68482L,)
+'''
 
-  We have 68482 validation pixels
-  The validation data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
-  Our X matrix is sized: (68482L,)
-  Our y array is sized: (68482L,)
-
+'''
 	col_0     1    2     3      4     5     6     7     8      9    10   11    All
 	row_0                                                                         
 	1      2597    0     0      0     0     0     0     0    701     0    0   3298
@@ -88,7 +86,9 @@ Our y array is sized: (87895L,)
 	10        0    0    47    520    63   190    40    19      1  5656    0   6536
 	11        0    0     0      0     0     0     0     0      0     0  352    352
 	All    2736  125  1752  11833  7208  1124  2702  1053  32945  6642  362  68482
+  '''
   
+  '''
 				precision    recall  f1-score   support
 	
 			1       0.95      0.79      0.86      3298
@@ -104,6 +104,8 @@ Our y array is sized: (87895L,)
 			11       0.97      1.00      0.99       352
 	
 	avg / total       0.89      0.89      0.89     68482
+'''
 
-  OAA = 88.8569259075 %
-
+'''
+OAA = 88.8569259075 %
+'''
