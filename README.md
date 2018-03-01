@@ -22,18 +22,31 @@ About the Random Forest Model Fit:
   Our OOB prediction of accuracy is: 99.8634734627%
 
   Band 1 importance: 0.0261680458145
+  
   Band 2 importance: 0.0153287127996
+  
   Band 3 importance: 0.0205070224479
+  
   Band 4 importance: 0.037036238847
+  
   Band 5 importance: 0.0310529483133
+  
   Band 6 importance: 0.0436272835319
+  
   Band 7 importance: 0.055942106673
+  
   Band 8 importance: 0.398011332962
+  
   Band 9 importance: 0.119100238254
+  
   Band 10 importance: 0.0119935702383
+  
   Band 11 importance: 0.0857394486887
+  
   Band 12 importance: 0.0216590258319
+  
   Band 13 importance: 0.0998573985857
+  
   Band 14 importance: 0.033976627012
 
 	predict     1    2     3      4     5     6     7     8      9    10   11    All
