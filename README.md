@@ -1,25 +1,26 @@
 # RandomForest-Classification
 
-You only have to prepare yor data:
+## You only have to prepare yor data:
 1. The multi-band Remote Sensing imaage as tif format.
 2. an image which defines your training dataset in the same extend as the remote sensing image
 3. an image which defines your validation dataset in the same extend as the remote sensing image
 
-You find a section "INPUT INFORMATION".
+## You find a section "INPUT INFORMATION".
 This is the only section where you have to change something in the script (directories and file names).
 
 
-EXAMPLE (14 bands image and 11 classes):
-
+## EXAMPLE (14 bands image and 11 classes):
 During the process you will get 2 images and the following information:
 
-About the training data:
-  We have 87895 training samples
-  The training data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
-  Our X matrix is sized: (87895L, 14L)
-  Our y array is sized: (87895L,)
+### About the training data:
+'''
+We have 87895 training samples
+The training data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
+Our X matrix is sized: (87895L, 14L)
+Our y array is sized: (87895L,)
+'''
 
-About the Random Forest Model Fit:
+### About the Random Forest Model Fit:
   Our OOB prediction of accuracy is: 99.8634734627%
 
   Band 1 importance: 0.0261680458145
@@ -66,7 +67,7 @@ About the Random Forest Model Fit:
 	All      5280  170  2962  16650  6194  1691  4509  2342  41504  6218  375  87895
 
 
-About the independent validation:
+### About the independent validation:
 
   We have 68482 validation pixels
   The validation data include 11 classes: [ 1  2  3  4  5  6  7  8  9 10 11]
