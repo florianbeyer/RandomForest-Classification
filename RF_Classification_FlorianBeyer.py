@@ -157,37 +157,35 @@ img_as_array = np.nan_to_num(img_as_array)
 
 
 # Now predict for each pixel
+# first prediction will be tried on the entire image
+# if not enough RAM, the dataset will be sliced
+try:
+    class_prediction = rf.predict(img_as_array)
+except MemoryError:
+    slices = int(round(len(img_as_array)/2))
 
-# actually like this:
-#class_prediction = rf.predict(img_as_array)
-
-# but in case of a big tree we have to slice the image
-# img_as_array has to be sliced in order to prevent memory error
-
-# first in two parts
-# if not possible, the slice number decreased until we don't get an memory error
-slices = int(round(len(img_as_array)/2))
-
-test = True
-
-while test == True:
-    try:
-        class_preds = list()
-        
-        temp = rf.predict(img_as_array[0:slices+1,:])
-        class_preds.append(temp)
-        
-        for i in range(slices,len(img_as_array),slices):
-            print '{} %, derzeit: {}'.format((i*100)/(len(img_as_array)), i)
-            temp = rf.predict(img_as_array[i+1:i+(slices+1),:])                
+    test = True
+    
+    while test == True:
+        try:
+            class_preds = list()
+            
+            temp = rf.predict(img_as_array[0:slices+1,:])
             class_preds.append(temp)
-        
-    except MemoryError as error:
-        slices = slices/2
-        print 'Not enought RAM, new slices = {}'.format(slices)
-        
-    else:
-        test = False
+            
+            for i in range(slices,len(img_as_array),slices):
+                print '{} %, derzeit: {}'.format((i*100)/(len(img_as_array)), i)
+                temp = rf.predict(img_as_array[i+1:i+(slices+1),:])                
+                class_preds.append(temp)
+            
+        except MemoryError as error:
+            slices = slices/2
+            print 'Not enought RAM, new slices = {}'.format(slices)
+            
+        else:
+            test = False
+else:
+    print 'Class prediction was successful without slicing!'
 
 
 # concatenate all slices and re-shape it to the orgiginal extend
