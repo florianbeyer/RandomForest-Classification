@@ -197,18 +197,15 @@ class_prediction = class_prediction.reshape(img[:, :, 0].shape)
 cols = img.shape[1]
 rows = img.shape[0]
 
-class_prediction.shape
-img.shape
-
 class_prediction.astype(np.float16)
-class_prediction[500,400]
 
-driver = gdal.GetDriverByName("GTiff")
+driver = gdal.GetDriverByName("gtiff")
 outdata = driver.Create(classification_image, cols, rows, 1, gdal.GDT_UInt16)
 outdata.SetGeoTransform(img_ds.GetGeoTransform())##sets same geotransform as input
 outdata.SetProjection(img_ds.GetProjection())##sets same projection as input
 outdata.GetRasterBand(1).WriteArray(class_prediction)
 outdata.FlushCache() ##saves to disk!!
+print 'Image saved to: {}'.format(classification_image)
 
 
 # ---ACCURACY ASSESSMENT---------------------------------------------------------
