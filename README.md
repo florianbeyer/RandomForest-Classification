@@ -12,6 +12,7 @@ I am using Anaconda (Python 2.7) and the GDAL package from OSGEO.
 ### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) UPDATE: 2019-02-07
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) In new version "*_shape.py" training and validation data can be inputted directly as shape files!
 Point 3 and 4 are noit necessary anymore!
+
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Furthermore, the classification result will be masked. Thus a black border has a value of 0 in the classification.
  
 
