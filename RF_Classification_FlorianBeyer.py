@@ -149,7 +149,7 @@ else:
 
 # Take our full image and reshape into long 2d array (nrow * ncol, nband) for classification
 new_shape = (img.shape[0] * img.shape[1], img.shape[2])
-img_as_array = img[:, :, :14].reshape(new_shape)
+img_as_array = img[:, :, :np.int(img.shape[2])].reshape(new_shape)
 
 print 'Reshaped from {o} to {n}'.format(o=img.shape, n=img_as_array.shape)
 
