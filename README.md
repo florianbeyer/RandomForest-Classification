@@ -11,6 +11,7 @@ I am using Anaconda (Python 2.7) and the GDAL package from OSGEO.
 4. An image which defines your validation dataset in the same extend as the remote sensing image
 ### UPDATE: 2019-02-07
 In new version "*_shape.py" training and validation data can be inputted directly as shape files!
+Point 3 and 4 are noit necessary anymore!
 
  
 
