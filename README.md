@@ -14,9 +14,9 @@ I am using Anaconda (Python 3.8) and the following packages:
 
 ### preparing data and adapting script
 1. prepare remote sensing image in tif format
-2. training and validation data as (GIS) shape files (Polygones)
-***IMPORTANT!!!*** -> classes as integer numbers (do not use class names as strings)
-***IMPORTANT!!!*** -> the attribute name as well as the numbers of every class have to be the same in the training and vaildation shape file
+2. training and validation data as (GIS) shape files (Polygones)  
+***IMPORTANT!!!*** -> classes as integer numbers (do not use class names as strings)  
+***IMPORTANT!!!*** -> the attribute name as well as the numbers of every class have to be the same in the training and vaildation shape file  
 ***IMPORTANT!!!*** -> image and shapes must have the same CRS (coordinate reference system e.g. UTM33N WGS84)
 
 3. Change/Adapt all information in Section: **INPUT INFORMATION**
