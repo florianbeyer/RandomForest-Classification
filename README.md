@@ -108,3 +108,7 @@ weighted avg       0.98      0.98      0.98      8058
 
 OAA = 98.138495904691 %
 ```
+
+## example data
+in the test.zip you find an example files for training and validation.
+If you want to test the script and you do not have any data, please contact me and I share an image with you.
