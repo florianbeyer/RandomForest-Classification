@@ -5,7 +5,7 @@ I am using Anaconda (Python 3.8) and the following packages:
 - GDAL package from OSGEO.
 - OGR
 - scikit learn
-(- pandas/numpy/matplotlib/seaborn/...)
+- (pandas/numpy/matplotlib/seaborn/...)
 
 ## Files
 ```Classifcation_script.ipynb``` - jupyter notebook with example outputs
