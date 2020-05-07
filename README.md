@@ -10,6 +10,9 @@ I am using Anaconda (Python 3.8) and the following packages:
 - scikit learn
 (- pandas/numpy/matplotlib/seaborn/...)
 
+## files...
+You find a jupyter notebook with example outputs ```Classifcation_script.ipynb``` and a python script ```Classifcation_script.py```.
+
 ### You only have to prepare yor data and you have to define how many tree you want to use:
 1. Choose the number of trees for the Random Forest (default = 500)
 2. The multi-band Remote Sensing image as tif format.
