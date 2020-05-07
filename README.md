@@ -2,7 +2,13 @@
 
 ## Getting Started
 
-I am using Anaconda (Python 3.8) and the GDAL package from OSGEO.
+This script is for classification of remote sensing multi-band images using shape files as input for training and validation.
+
+I am using Anaconda (Python 3.8) and the following packages:
+- GDAL package from OSGEO.
+- OGR
+- scikit learn
+(- pandas/numpy/matplotlib/seaborn/...)
 
 ### You only have to prepare yor data and you have to define how many tree you want to use:
 1. Choose the number of trees for the Random Forest (default = 500)
