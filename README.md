@@ -12,18 +12,19 @@ I am using Anaconda (Python 3.8) and the following packages:
 - ```Classifcation_script.py``` - python script 
 
 
-### You only have to prepare yor data and you have to define how many tree you want to use:
-1. Choose the number of trees for the Random Forest (default = 500)
-2. The multi-band Remote Sensing image as tif format.
-3. training and validation data as shape files (Polygones)
-IMPORTANT!!! -> classes as integer numbers (do not use class names)
+### preparing data and adapting script
+1. prepare remote sensing image in tif format
+2. training and validation data as (GIS) shape files (Polygones)
+***IMPORTANT!!!*** -> classes as integer numbers (do not use class names as strings)
+***IMPORTANT!!!*** -> the attribute name as well as the numbers of every class have to be the same in the training and vaildation shape file
+***IMPORTANT!!!*** -> image and shapes must have the same CRS (coordinate reference system e.g. UTM33N WGS84)
 
-Furthermore, the classification result will be masked. Thus a black border has a value of 0 in the classification.
- 
- 
-### You find a section "INPUT INFORMATION".
-This is the only section where you have to change something in the script (directories and file names).
-
+3. Change/Adapt all information in Section: **INPUT INFORMATION**
+  - Choose the number of trees for the Random Forest (default = 500)
+  - Choose how many CPU-cores you want to use or processing (n_cores = -1 -> uses all available cores)
+  - Define directories of the input image and the traing/validation.shp
+  - Define the name of the attribute
+  - Define target directories for classification.tif and report.txt
 
 ## EXAMPLE:
 This example uses a 14 bands remote sensing dataset and 8 classes as training and validation.
