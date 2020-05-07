@@ -1,7 +1,4 @@
 # RandomForest-Classification
-
-## Getting Started
-
 This script is for classification of remote sensing multi-band images using shape files as input for training and validation.
 
 I am using Anaconda (Python 3.8) and the following packages:
