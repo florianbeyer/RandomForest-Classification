@@ -8,8 +8,8 @@ I am using Anaconda (Python 3.8) and the following packages:
 - (pandas/numpy/matplotlib/seaborn/...)
 
 ## Files
-```Classifcation_script.ipynb``` - jupyter notebook with example outputs
-```Classifcation_script.py``` - python script 
+- ```Classifcation_script.ipynb``` - jupyter notebook with example outputs
+- ```Classifcation_script.py``` - python script 
 
 
 ### You only have to prepare yor data and you have to define how many tree you want to use:
