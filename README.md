@@ -2,20 +2,17 @@
 
 ## Getting Started
 
-I am using Anaconda (Python 2.7) and the GDAL package from OSGEO.
+I am using Anaconda (Python 3.8) and the GDAL package from OSGEO.
 
 ### You only have to prepare yor data and you have to define how many tree you want to use:
 1. Choose the number of trees for the Random Forest (default = 500)
 2. The multi-band Remote Sensing image as tif format.
-3. An image which defines your training dataset in the same extend as the remote sensing image
-4. An image which defines your validation dataset in the same extend as the remote sensing image
-### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) UPDATE: 2019-02-07
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) In new version "*_shape.py" training and validation data can be inputted directly as shape files!
-Point 3 and 4 are noit necessary anymore!
+3. training and validation data as shape files (Polygones)
+IMPORTANT!!! -> classes as integer numbers (do not use class names)
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Furthermore, the classification result will be masked. Thus a black border has a value of 0 in the classification.
+Furthermore, the classification result will be masked. Thus a black border has a value of 0 in the classification.
  
-
+ 
 ### You find a section "INPUT INFORMATION".
 This is the only section where you have to change something in the script (directories and file names).
 
