@@ -7,6 +7,10 @@ I am using Anaconda (Python 3.8) and the following packages:
 - scikit learn
 - (pandas/numpy/matplotlib/seaborn/...)
 
+### Please cite my script, if you use it:
+
+[Beyer, Florian, et al. “Multisensor Data to Derive Peatland Vegetation Communities Using a Fixed-Wing Unmanned Aerial Vehicle.” International Journal of Remote Sensing, vol. 00, no. 00, Taylor & Francis, 2019, pp. 1–23, doi:10.1080/01431161.2019.1580825.](https://www.tandfonline.com/doi/abs/10.1080/01431161.2019.1580825?journalCode=tres20)
+
 ## Files
 - ```Classifcation_script.ipynb``` - jupyter notebook with example outputs
 - ```Classifcation_script.py``` - python script 
