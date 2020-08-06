@@ -19,6 +19,7 @@ the software is able to apply
 
 ![Maptor](http://flobeyer.de/img/Maptor11beta_release.JPG "Maptor 1.1beta")
 
+[Please download and test Maptor 1.1beta here!](https://datenportal.wetscapes.de/dataset/maptor-0-0)
 
 ***upcoming fetaures:***
 - PLSR Regression
