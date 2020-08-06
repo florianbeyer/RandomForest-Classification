@@ -17,7 +17,7 @@ Finally, we are pleased to inform you, that our brand new software Maptor has no
 the software is able to apply 
 ***random forest classification and regression on remote sensing data***
 
-![Maptor](https://datenportal.wetscapes.de/dataset/d45e1300-a440-4c3a-94ee-e10e1cd509f6/resource/18ad7dc3-82ca-41e3-b50c-4ebfafdd5a05/download/maptor11beta_release "Maptor 1.1beta")
+![Maptor](http://flobeyer.de/img/Maptor11beta_release.JPG "Maptor 1.1beta")
 
 
 ***upcoming fetaures:***
