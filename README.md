@@ -11,6 +11,20 @@ I am using Anaconda (Python 3.8) and the following packages:
 
 [Beyer, Florian, et al. “Multisensor Data to Derive Peatland Vegetation Communities Using a Fixed-Wing Unmanned Aerial Vehicle.” International Journal of Remote Sensing, vol. 00, no. 00, Taylor & Francis, 2019, pp. 1–23, doi:10.1080/01431161.2019.1580825.](https://www.tandfonline.com/doi/abs/10.1080/01431161.2019.1580825?journalCode=tres20)
 
+## Maptor 1.1beta
+Finally, we are pleased to inform you, that our brand new software Maptor has now been released as a beta version.
+
+the software is able to apply 
+***random forest classification and regression on remote sensing data***
+
+
+
+
+***upcoming fetaures:***
+- PLSR Regression
+- different Regression workflows for small and large sample sizes
+
+
 ## Files
 - ```Classifcation_script.ipynb``` - jupyter notebook with example outputs
 - ```Classifcation_script.py``` - python script 
