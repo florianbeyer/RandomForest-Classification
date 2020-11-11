@@ -11,19 +11,16 @@ I am using Anaconda (Python 3.8) and the following packages:
 
 [Beyer, Florian, et al. “Multisensor Data to Derive Peatland Vegetation Communities Using a Fixed-Wing Unmanned Aerial Vehicle.” International Journal of Remote Sensing, vol. 00, no. 00, Taylor & Francis, 2019, pp. 1–23, doi:10.1080/01431161.2019.1580825.](https://www.tandfonline.com/doi/abs/10.1080/01431161.2019.1580825?journalCode=tres20)
 
-## Maptor 1.1beta
-Finally, we are pleased to inform you, that our brand new software [Maptor](https://datenportal.wetscapes.de/dataset/maptor-0-0) has now been released as a beta version (2020-08-05).
+# NEW RELEASE!!! Maptor 1.4beta
+Finally, we are pleased to inform you, that our brand new software [Maptor](https://datenportal.wetscapes.de/dataset/maptor-0-0) has now been released as a beta version (2020-11-11).
 
 the software is able to apply 
 ***random forest classification and regression on remote sensing data***
 
-![Maptor](http://flobeyer.de/img/Maptor11beta_release.JPG "Maptor 1.1beta")
+![Maptor](http://flobeyer.de/img/Maptor_Screenshot.JPG "Maptor 1.4beta")
 
-[Please download and test Maptor 1.1beta here!](https://datenportal.wetscapes.de/dataset/maptor-0-0)
+[Please download and test Maptor 1.4beta here!](https://datenportal.wetscapes.de/dataset/maptor-0-0)
 
-***upcoming fetaures:***
-- PLSR Regression
-- different Regression workflows for small and large sample sizes
 
 
 ## Files
